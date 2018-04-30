@@ -1,0 +1,33 @@
+{
+  "name": "alerts-css",
+  "version": "1.0.0",
+  "description": "Simple and Pure CSS for alerts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoquinalha/alerts-css.git"
+  },
+  "author": "gustavoquinalha<gusquinalha@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gustavoquinalha/alerts-css/issues"
+  },
+  "homepage": "https://github.com/gustavoquinalha/alerts-css#readme",
+  "dependencies": {
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.0",
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0"
+  }
+}

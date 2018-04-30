@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts CSS - @gustavoquinalha</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-grid-flexbox@2.0.1/css/the-grid.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@gustavoquinalha/buttons-css@1.0.2/assets/css/buttons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/alerts.min.css">
+    <link rel="stylesheet" href="./assets/css/highlight-theme.css">
+    <link rel="stylesheet" href="./assets/css/master.css">
+
+    <meta name="description" content="Simple and Pure CSS for alerts." />
+    <meta name="author" content="gustavoquinalha" />
+    <link rel="base" href="http://quinalha.me/alerts-css/" />
+    <link rel="canonical" href="http://quinalha.me/alerts-css/" />
+    <meta rel="sitemap" type="application/xml" content="http://quinalha.me/alerts-css/sitemap.xml" />
+    <meta name="robots" content="index/follow" />
+    <meta name="googlebot" content="index/follow" />
+    <meta name="theme-color" content="#3742fa" />
+    <meta name="msapplication-navbutton-color" content="#3742fa" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3742fa" />
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="Alerts CSS - @gustavoquinalha" />
+    <meta itemprop="description" content="Simple and Pure CSS for alerts." />
+    <meta itemprop="image" content="http://quinalha.me/alerts-css/assets/image/intro.jpg" />
+    <!-- markup for facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Alerts CSS - @gustavoquinalha" />
+    <meta property="og:url" content="http://quinalha.me/alerts-css/" />
+    <meta property="og:site_name" content="Alerts CSS" />
+    <meta property="og:image" content="http://quinalha.me/alerts-css/assets/image/intro.jpg" />
+    <meta property="og:description" content="Simple and Pure CSS for alerts." />
+    <meta property="og:locale" content="pt_Br" />
+    <meta property="fb:app_id" content="" />
+    <meta property="fb:admins" content="" />
+    <!-- markup for twitter -->
+    <meta name="twitter:card" content="Summary" />
+    <meta name="twitter:title" content="Alerts CSS - @gustavoquinalha" />
+    <meta name="twitter:description" content="Simple and Pure CSS for alerts." />
+    <meta name="twitter:creator" content="gustavoquinalha" />
+    <meta name="twitter:image" content="http://quinalha.me/alerts-css/assets/image/intro.jpg" />
+    <!-- JSON-LD - structured data markup Google Search -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://www.schema.org",
+        "@type": "website",
+        "name": "Alerts CSS",
+        "alternateName": "ButtonsCSS",
+        "url": "http://quinalha.me/alerts-css/"
+      }
+    </script>
+
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="content content-header container align-items-center">
+        <div class="size container wrap align-items-center">
+          <div class="container column">
+            <h1>alerts<span>.css</span></h1>
+            <p>Simple and pure CSS for alerts.</p>
+            <div class="container wrap">
+              <a href="#content" class="btn btn-primary">Get Started</a>
+              <a href="https://github.com/gustavoquinalha/alerts-css" target="_blank" class="btn">Github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="size container relative">
+      <div class="sidebar-container flex-basis-200 flex-grow-1">
+        <div class="sidebar" id="main-header">
+          <nav>
+            <ul>
+              <li><a data-scroll href="#example">Example</a> </li>
+              <li><a data-scroll href="#install">Install</a> </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="flex-basis-600 flex-grow-2 content hidden" id="content">
+
+        <div class="content" id="sizes">
+          <div class="box-title">
+            <h2>Sizes</h2>
+          </div>
+          
+          <div class="container-alert">
+            <div class="alert alert_sm">
+              <div class="alert--icon">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="alert--title">
+                Usuário ou senha incorretos!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            
+            <div class="alert">
+              <div class="alert--icon">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="alert--title">
+                Usuário ou senha incorretos!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            
+            <div class="alert alert_lg">
+              <div class="alert--icon">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="alert--title">
+                Usuário ou senha incorretos!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content" id="colors">
+          <div class="box-title">
+            <h2>Colors</h2>
+          </div>
+          
+          <div class="container-alert">
+            
+            <div class="alert alert_success">
+              <div class="alert--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="alert--title">
+                Logado com sucesso!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            
+            <div class="alert alert_danger">
+              <div class="alert--icon">
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="alert--title">
+                Usuário ou senha incorretos!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            
+            <div class="alert alert_warning">
+              <div class="alert--icon">
+                <i class="fas fa-exclamation-circle"></i>
+              </div>
+              <div class="alert--title">
+                Usuário ou senha incorretos!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content" id="install">
+          <div class="box-title">
+            <h2>Install</h2>
+          </div>
+          <div class="">
+            <p class="type">NPM</p>
+            <div class="example margin-bottom-20">
+              <pre><code class="shell" id="npm">$ npm i alerts-css -D</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#npm"><span class="feather-icon icon-clipboard"></span></button>
+            </div>
+            <p class="type">Yarn</p>
+            <div class="example margin-bottom-20">
+              <pre><code class="shell" id="yarn">$ yarn add alerts-css</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#yarn"><span class="feather-icon icon-clipboard"></span></button>
+            </div>
+            <p class="type">jsdelivr</p>
+            <div class="example">
+              <pre><code class="html" id="jsdelivr">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/alerts-css@1.0.0/assets/css/alerts-css.min.css&quot;&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#jsdelivr"><span class="feather-icon icon-clipboard"></span></button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="size container wrap">
+
+          <ul class="container wrap">
+            <li><a data-scroll href="#example">Example</a> </li>
+            <li><a data-scroll href="#install">Install</a> </li>
+            <li><a href="https://github.com/gustavoquinalha/" target="_blank">@gustavoquinalha</a> </li>
+          </ul>
+
+          <!-- <div class="margin-20">
+            alerts.css - <a href="https://github.com/gustavoquinalha/" target="_blank">@gustavoquinalha</a>
+          </div> -->
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/menuspy@latest/dist/menuspy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+      new Clipboard('.btn');
+    </script>
+    <script>
+      var elm = document.querySelector('#main-header');
+      var ms = new MenuSpy(elm, {
+        threshold: -700,
+        hashTimeout: 2000
+      });
+    </script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+  </body>
+
+</html>

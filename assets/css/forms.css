@@ -1,0 +1,273 @@
+.form-content {
+  width: 100%
+}
+
+.form-content .form-group {
+  margin-bottom: 20px
+}
+
+.form-content .form-group:last-child {
+  margin-bottom: 0
+}
+
+.form-content .form-group_row {
+  margin: 5px
+}
+
+.form-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative
+}
+
+.form-group_row {
+  -ms-flex-direction: row;
+  flex-direction: row
+}
+
+.form-group_row .label-control {
+  width: 20%;
+  text-align: right
+}
+
+.form-group_row .form-control {
+  width: 80%
+}
+
+@media (max-width:720px) {
+  .form-group_row {
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+  .form-group_row .label-control {
+    width: 100%;
+    text-align: left
+  }
+  .form-group_row .form-control {
+    width: 100%
+  }
+}
+
+.form-control {
+  transition: .3s;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: 0;
+  width: 100%;
+  height: 50px
+}
+
+.form-control_sm {
+  padding: 5px;
+  font-size: 14px;
+  height: 35px
+}
+
+.form-control_lg {
+  padding: 25px;
+  font-size: 20px;
+  height: auto
+}
+
+.label-control {
+  color: #2f3542;
+  transition: .3s;
+  margin: 5px;
+  white-space: nowrap;
+  width: 100%;
+  font-size: 16px
+}
+
+.label-control_sm {
+  font-size: 14px
+}
+
+.label-control_lg {
+  font-size: 20px
+}
+
+.form-control:focus {
+  box-shadow: 0 0 1px 1px #3742fa;
+  border-radius: 4px
+}
+
+.form-group:focus-within .label-control {
+  color: #3742fa
+}
+
+.form-group:focus-within .form-control {
+  color: #3742fa
+}
+
+.form-group_feedback.form-group_success {
+  color: #2ed573
+}
+
+.form-group_feedback.form-group_success .label-control {
+  color: #2ed573 !important
+}
+
+.form-group_feedback.form-group_success .form-control {
+  box-shadow: 0 0 1px 1px #2ed573;
+  color: #2ed573 !important
+}
+
+.form-group_feedback.form-group_error {
+  color: #ff4757
+}
+
+.form-group_feedback.form-group_error .label-control {
+  color: #ff4757 !important
+}
+
+.form-group_feedback.form-group_error .form-control {
+  box-shadow: 0 0 1px 1px #ff4757;
+  color: #ff4757 !important
+}
+
+.form-group_feedback.form-group_warning {
+  color: #ffa502
+}
+
+.form-group_feedback.form-group_warning .label-control {
+  color: #ffa502 !important
+}
+
+.form-group_feedback.form-group_warning .form-control {
+  box-shadow: 0 0 1px 1px #ffa502;
+  color: #ffa502 !important
+}
+
+.form-feedback {
+  margin: 5px;
+  text-align: left;
+  width: 100%;
+  font-size: 12px
+}
+
+.form-feedback-icon {
+  width: 20px;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px
+}
+
+.form-feedback-icon_sm {
+  font-size: 14px
+}
+
+.form-feedback-icon_lg {
+  font-size: 20px
+}
+
+.form-block {
+  width: 100%;
+  position: relative
+}
+
+.form-group .form-feedback,
+.form-group .form-feedback-icon {
+  display: none
+}
+
+.form-group.form-group_feedback .form-feedback,
+.form-group.form-group_feedback .form-feedback-icon {
+  display: -ms-flexbox;
+  display: flex
+}
+
+textarea.form-control {
+  height: auto
+}
+
+.form-group_radio,
+.form-group_select {
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-align: baseline;
+  align-items: baseline
+}
+
+.form-group_radio .label-control,
+.form-group_select .label-control {
+  width: auto;
+  margin: 0 10px
+}
+
+.form-group_select .form-group-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.form-group_select input {
+  display: none
+}
+
+.form-group_select .form-control_select {
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  position: relative;
+  border-radius: 4px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  transition: .3s;
+  color: #fff;
+  font-size: 14px
+}
+
+.form-group_select .form-control_select.radio {
+  border-radius: 50%
+}
+
+.form-group_select .text {
+  margin-left: 10px;
+  cursor: pointer
+}
+
+.form-group_select .form-group-container:hover input~.form-control_select {
+  background-color: #ddd
+}
+
+.form-group_select .form-group-container input~.form-control_select .fas {
+  opacity: 0;
+  transition: .3s
+}
+
+.form-group_select .form-group-container input:checked~.form-control_select .fas {
+  opacity: 1
+}
+
+.form-group_select .form-group-container input:checked~.form-control_select {
+  background-color: #3742fa;
+  border: 1px solid #3742fa
+}
