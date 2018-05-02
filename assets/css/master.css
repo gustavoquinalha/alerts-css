@@ -194,3 +194,7 @@ a:hover {
 .btn-margin {
   margin-bottom: 10px;
 }
+
+header .content .btn {
+  margin: 5px;
+}

@@ -136,3 +136,28 @@ $size-lg: 26px;
     display: none;
   }
 }
+
+
+// alerts absoluts
+.fixed-alerts {
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  max-width: 400px;
+    &_bottom {
+      bottom: 0;
+    }
+    &_right {
+      right: 0;
+    }
+    
+    .alert {
+      box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+      margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+    }
+}

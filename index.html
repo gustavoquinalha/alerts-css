@@ -71,6 +71,34 @@
   </head>
 
   <body>
+    
+    <div class="fixed-alerts fixed-alerts_bottom fixed-alerts_right">
+      
+      <div class="alert alert_danger" style="animation-delay: .1s">
+        <div class="alert--icon">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="alert--title">
+          Usuário ou senha incorretos!
+        </div>
+        <div class="alert--close">
+          <i class="far fa-times-circle"></i>
+        </div>
+      </div>
+      
+      <div class="alert alert_danger" style="animation-delay: .2s">
+        <div class="alert--icon">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="alert--title">
+          Usuário ou senha incorretos!
+        </div>
+        <div class="alert--close">
+          <i class="far fa-times-circle"></i>
+        </div>
+      </div>
+      
+    </div>
 
     <header>
       <div class="content content-header container align-items-center">
@@ -92,107 +120,16 @@
         <div class="sidebar" id="main-header">
           <nav>
             <ul>
-              <li><a data-scroll href="#example">Example</a> </li>
-              <li><a data-scroll href="#install">Install</a> </li>
+              <li><a data-scroll href="#example">Example</a></li>
+              <li><a data-scroll href="#install">Install</a></li>
+              <li><a data-scroll href="#colors">Colors</a></li>
+              <li><a data-scroll href="#sizes">Sizes</a></li>
             </ul>
           </nav>
         </div>
       </div>
 
       <div class="flex-basis-600 flex-grow-2 content hidden" id="content">
-
-        <div class="content" id="sizes">
-          <div class="box-title">
-            <h2>Sizes</h2>
-          </div>
-
-          <div class="container-alert">
-
-            <button onclick="show(this)" class="btn btn-margin">Reset</button>
-
-            <div class="alert alert_sm" style="animation-delay: .1s">
-              <div class="alert--icon">
-                <i class="fas fa-bell"></i>
-              </div>
-              <div class="alert--title">
-                Usuário ou senha incorretos!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-
-            <div class="alert" style="animation-delay: .2s">
-              <div class="alert--icon">
-                <i class="fas fa-bell"></i>
-              </div>
-              <div class="alert--title">
-                Usuário ou senha incorretos!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-
-            <div class="alert alert_lg" style="animation-delay: .3s">
-              <div class="alert--icon">
-                <i class="fas fa-bell"></i>
-              </div>
-              <div class="alert--title">
-                Usuário ou senha incorretos!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="content" id="colors">
-          <div class="box-title">
-            <h2>Colors</h2>
-          </div>
-
-          <div class="container-alert">
-
-            <div class="alert alert_success" style="animation-delay: .1s">
-              <div class="alert--icon">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div class="alert--title">
-                Logado com sucesso!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-
-            <div class="alert alert_danger" style="animation-delay: .2s">
-              <div class="alert--icon">
-                <i class="fas fa-times-circle"></i>
-              </div>
-              <div class="alert--title">
-                Usuário ou senha incorretos!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-
-            <div class="alert alert_warning" style="animation-delay: .3s">
-              <div class="alert--icon">
-                <i class="fas fa-exclamation-circle"></i>
-              </div>
-              <div class="alert--title">
-                Desculpe, ocorreu algum erro!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-
-          </div>
-        </div>
 
         <div class="content" id="install">
           <div class="box-title">
@@ -217,6 +154,88 @@
           </div>
         </div>
 
+        <div class="content" id="sizes">
+          <div class="box-title">
+            <h2>Sizes</h2>
+          </div>
+          <div class="container-alert">
+            <button onclick="show(this)" class="btn btn-margin">Reset</button>
+            <div class="alert alert_sm" style="animation-delay: .1s">
+              <div class="alert--icon">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="alert--title">
+                Usuário ou senha incorretos!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            <div class="alert" style="animation-delay: .2s">
+              <div class="alert--icon">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="alert--title">
+                Usuário ou senha incorretos!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            <div class="alert alert_lg" style="animation-delay: .3s">
+              <div class="alert--icon">
+                <i class="fas fa-bell"></i>
+              </div>
+              <div class="alert--title">
+                Usuário ou senha incorretos!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content" id="colors">
+          <div class="box-title">
+            <h2>Colors</h2>
+          </div>
+          <div class="container-alert">
+            <div class="alert alert_success" style="animation-delay: .1s">
+              <div class="alert--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="alert--title">
+                Logado com sucesso!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            <div class="alert alert_danger" style="animation-delay: .2s">
+              <div class="alert--icon">
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <div class="alert--title">
+                Usuário ou senha incorretos!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            <div class="alert alert_warning" style="animation-delay: .3s">
+              <div class="alert--icon">
+                <i class="fas fa-exclamation-circle"></i>
+              </div>
+              <div class="alert--title">
+                Desculpe, ocorreu algum erro!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -226,8 +245,10 @@
         <div class="size container wrap">
 
           <ul class="container wrap">
-            <li><a data-scroll href="#example">Example</a> </li>
-            <li><a data-scroll href="#install">Install</a> </li>
+            <li><a data-scroll href="#example">Example</a></li>
+            <li><a data-scroll href="#install">Install</a></li>
+            <li><a data-scroll href="#colors">Colors</a></li>
+            <li><a data-scroll href="#sizes">Sizes</a></li>
             <li><a href="https://github.com/gustavoquinalha/" target="_blank">@gustavoquinalha</a> </li>
           </ul>
 
