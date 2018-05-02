@@ -6,9 +6,9 @@ $color-black: #333333;
 
 $color-primary: #3742fa;
 
-$color-warning: #F3B33B;
-$color-danger: #E14B40;
-$color-success: #5FFE7F;
+$color-warning: #ffa502;
+$color-danger: #ff4757;
+$color-success: #2ed573;
 
 // sizes
 $radius: 4px;
@@ -29,11 +29,11 @@ $size-lg: 26px;
 .alert {
   width: 100%;
   padding: 15px;
-  
+
   border: 1px solid $color-dark;
   background: lighten($color-dark, 20);
   color: darken($color-dark, 30);
-  
+
   border-radius: $radius;
   display: flex;
   justify-content: center;
@@ -95,9 +95,9 @@ $size-lg: 26px;
 // colors
 .alert {
   &_success {
-    border-color: darken($color-success, 25);
-    background: lighten($color-success, 25);
-    color: darken($color-success, 25);
+    border-color: $color-success;
+    background: lighten($color-success, 35);
+    color: darken($color-success, 10);
   }
 
   &_danger {
@@ -109,13 +109,29 @@ $size-lg: 26px;
   &_warning {
     border-color: $color-warning;
     background: lighten($color-warning, 30);
-    color: $color-warning;
+    color: darken($color-warning, 10);
   }
 }
 
-
 // hide 
 .alert {
+  transition: 0.3s;
+
+  @keyframes showAlert {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  animation-name: showAlert;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+
   &.alert_none {
     display: none;
   }
