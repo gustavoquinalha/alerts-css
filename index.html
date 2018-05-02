@@ -71,10 +71,9 @@
   </head>
 
   <body>
-    
+
     <div class="fixed-alerts fixed-alerts_bottom fixed-alerts_right">
-      
-      <div class="alert alert_danger" style="animation-delay: .1s">
+      <div class="alert alert_danger alert_none" style="animation-delay: .1s" id="alert-bottom-right">
         <div class="alert--icon">
           <i class="fas fa-times-circle"></i>
         </div>
@@ -85,8 +84,10 @@
           <i class="far fa-times-circle"></i>
         </div>
       </div>
-      
-      <div class="alert alert_danger" style="animation-delay: .2s">
+    </div>
+
+    <div class="fixed-alerts fixed-alerts_bottom fixed-alerts_left">
+      <div class="alert alert_danger alert_none" style="animation-delay: .1s" id="alert-bottom-left">
         <div class="alert--icon">
           <i class="fas fa-times-circle"></i>
         </div>
@@ -97,7 +98,34 @@
           <i class="far fa-times-circle"></i>
         </div>
       </div>
-      
+    </div>
+
+    <div class="fixed-alerts fixed-alerts_top fixed-alerts_right">
+      <div class="alert alert_danger alert_none" style="animation-delay: .1s" id="alert-top-right">
+        <div class="alert--icon">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="alert--title">
+          Usuário ou senha incorretos!
+        </div>
+        <div class="alert--close">
+          <i class="far fa-times-circle"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-alerts fixed-alerts_top fixed-alerts_left">
+      <div class="alert alert_danger alert_none" style="animation-delay: .1s" id="alert-top-left">
+        <div class="alert--icon">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="alert--title">
+          Usuário ou senha incorretos!
+        </div>
+        <div class="alert--close">
+          <i class="far fa-times-circle"></i>
+        </div>
+      </div>
     </div>
 
     <header>
@@ -158,8 +186,10 @@
           <div class="box-title">
             <h2>Sizes</h2>
           </div>
+
+          <button onclick="show(this)" class="btn btn-sm btn-margin"><i class="fas fa-retweet"></i></button>
           <div class="container-alert">
-            <button onclick="show(this)" class="btn btn-margin">Reset</button>
+
             <div class="alert alert_sm" style="animation-delay: .1s">
               <div class="alert--icon">
                 <i class="fas fa-bell"></i>
@@ -200,6 +230,7 @@
           <div class="box-title">
             <h2>Colors</h2>
           </div>
+          <button onclick="show(this)" class="btn btn-sm btn-margin"><i class="fas fa-retweet"></i></button>
           <div class="container-alert">
             <div class="alert alert_success" style="animation-delay: .1s">
               <div class="alert--icon">
@@ -212,7 +243,18 @@
                 <i class="far fa-times-circle"></i>
               </div>
             </div>
-            <div class="alert alert_danger" style="animation-delay: .2s">
+            <div class="alert alert_info" style="animation-delay: .2s">
+              <div class="alert--icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="alert--title">
+                Atualizado com sucesso!
+              </div>
+              <div class="alert--close">
+                <i class="far fa-times-circle"></i>
+              </div>
+            </div>
+            <div class="alert alert_danger" style="animation-delay: .3s">
               <div class="alert--icon">
                 <i class="fas fa-times-circle"></i>
               </div>
@@ -223,7 +265,7 @@
                 <i class="far fa-times-circle"></i>
               </div>
             </div>
-            <div class="alert alert_warning" style="animation-delay: .3s">
+            <div class="alert alert_warning" style="animation-delay: .4s">
               <div class="alert--icon">
                 <i class="fas fa-exclamation-circle"></i>
               </div>
@@ -237,7 +279,24 @@
           </div>
         </div>
 
+        <div class="content" id="colors">
+          <div class="box-title">
+            <h2>Fixed alerts</h2>
+          </div>
+          <!-- <button onclick="show(this)" class="btn btn-sm btn-margin"><i class="fas fa-retweet"></i></button> -->
+          <div class="container-alert container wrap">
+
+            <button type="button" name="button" class="btn" id="top-left">Top Left</button>
+            <button type="button" name="button" class="btn" id="top-right">Top Right</button>
+            <button type="button" name="button" class="btn" id="bottom-left">Bottom Left</button>
+            <button type="button" name="button" class="btn" id="bottom-right">Bottom Right</button>
+
+          </div>
+
+        </div>
       </div>
+
+    </div>
     </div>
 
     <footer>
@@ -249,7 +308,7 @@
             <li><a data-scroll href="#install">Install</a></li>
             <li><a data-scroll href="#colors">Colors</a></li>
             <li><a data-scroll href="#sizes">Sizes</a></li>
-            <li><a href="https://github.com/gustavoquinalha/" target="_blank">@gustavoquinalha</a> </li>
+            <li><a href="https://github.com/gustavoquinalha/" target="_blank">@gustavoquinalha</a></li>
           </ul>
 
           <!-- <div class="margin-20">
@@ -279,6 +338,33 @@
       var scroll = new SmoothScroll('a[href*="#"]');
     </script>
     <script type="text/javascript" src="./assets/js/index.js"></script>
+    <script type="text/javascript">
+      const btnBottomRight = document.getElementById('bottom-right');
+      const btnBottomLeft = document.getElementById('bottom-left');
+      const btnTopRight = document.getElementById('top-right');
+      const btnTopLeft = document.getElementById('top-left');
+
+      const alertBottomRight = document.getElementById('alert-bottom-right');
+      const alertBottomLeft = document.getElementById('alert-bottom-left');
+      const alertTopRight = document.getElementById('alert-top-right');
+      const alertTopLeft = document.getElementById('alert-top-left');
+
+      btnBottomRight.addEventListener('click', function start() {
+        alertBottomRight.classList.remove('alert_none');
+      });
+
+      btnBottomLeft.addEventListener('click', function start() {
+        alertBottomLeft.classList.remove('alert_none');
+      });
+
+      btnTopRight.addEventListener('click', function start() {
+        alertTopRight.classList.remove('alert_none');
+      });
+
+      btnTopLeft.addEventListener('click', function start() {
+        alertTopLeft.classList.remove('alert_none');
+      });
+    </script>
   </body>
 
 </html>

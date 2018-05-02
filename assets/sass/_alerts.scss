@@ -9,6 +9,7 @@ $color-primary: #3742fa;
 $color-warning: #ffa502;
 $color-danger: #ff4757;
 $color-success: #2ed573;
+$color-info: #71c9ff;
 
 // sizes
 $radius: 4px;
@@ -111,6 +112,12 @@ $size-lg: 26px;
     background: lighten($color-warning, 30);
     color: darken($color-warning, 10);
   }
+
+  &_info {
+    border-color: $color-info;
+    background: lighten($color-info, 20);
+    color: darken($color-info, 10);
+  }
 }
 
 // hide 
@@ -137,7 +144,6 @@ $size-lg: 26px;
   }
 }
 
-
 // alerts absoluts
 .fixed-alerts {
   padding: 10px;
@@ -146,18 +152,29 @@ $size-lg: 26px;
   z-index: 9999999;
   width: 100%;
   max-width: 400px;
-    &_bottom {
-      bottom: 0;
+
+  &_bottom {
+    bottom: 0;
+  }
+
+  &_top {
+    top: 0;
+  }
+
+  &_right {
+    right: 0;
+  }
+
+  &_left {
+    left: 0;
+  }
+
+  .alert {
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
     }
-    &_right {
-      right: 0;
-    }
-    
-    .alert {
-      box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
-      margin-bottom: 10px;
-        &:last-child {
-          margin-bottom: 0;
-        }
-    }
+  }
 }

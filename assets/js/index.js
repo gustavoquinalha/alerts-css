@@ -17,6 +17,8 @@ alerts.forEach(el => el.addEventListener('click', () => {
 }))
 
 function show (btn) {
-  const alert = btn.nextElementSibling
-  if (!checkShowing(alert)) alert.classList.remove('alert_none')
+  const alerts = btn.nextElementSibling.children
+  for (const el of alerts) {
+    if (!checkShowing(el)) el.classList.remove(`alert_none`)
+  }
 }
