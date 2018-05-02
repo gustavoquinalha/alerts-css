@@ -1,6 +1,6 @@
 
 <div align="center">
-<h1>Buttons.css</h1>
+<h1>Alerts.css</h1>
 <p>Simple and Pure CSS for alerts.</p>
 <img src="https://img.shields.io/badge/version-1.0.0-green.svg">
 <img src="https://img.shields.io/github/issues/gustavoquinalha/alerts-css.svg">
