@@ -73,18 +73,7 @@
   <body>
 
     <div class="fixed-alerts fixed-alerts_bottom fixed-alerts_right">
-      <div class="alert alert_danger " style="animation-delay: .1s" id="alert-bottom-right">
-        <div class="alert--icon">
-          <i class="fas fa-times-circle"></i>
-        </div>
-        <div class="alert--title">
-          Usuário ou senha incorretos!
-        </div>
-        <div class="alert--close">
-          <i class="far fa-times-circle"></i>
-        </div>
-      </div>
-      <div class="alert alert_danger " style="animation-delay: .2s" id="alert-bottom-right">
+      <div class="alert alert_danger alert_none" style="animation-delay: .1s" id="alert-bottom-right">
         <div class="alert--icon">
           <i class="fas fa-times-circle"></i>
         </div>
@@ -361,19 +350,19 @@
       const alertTopLeft = document.getElementById('alert-top-left');
 
       btnBottomRight.addEventListener('click', function start() {
-        alertBottomRight.classList.remove('alert_none');
+        alertBottomRight.classList.toggle('alert_none');
       });
 
       btnBottomLeft.addEventListener('click', function start() {
-        alertBottomLeft.classList.remove('alert_none');
+        alertBottomLeft.classList.toggle('alert_none');
       });
 
       btnTopRight.addEventListener('click', function start() {
-        alertTopRight.classList.remove('alert_none');
+        alertTopRight.classList.toggle('alert_none');
       });
 
       btnTopLeft.addEventListener('click', function start() {
-        alertTopLeft.classList.remove('alert_none');
+        alertTopLeft.classList.toggle('alert_none');
       });
     </script>
   </body>
