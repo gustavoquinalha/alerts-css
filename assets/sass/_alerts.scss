@@ -169,7 +169,11 @@ $size-lg: 26px;
 
 // hide 
 .alert {
-  transition: 0.3s;
+  transition: all .3s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  overflow: hidden;
 
   @keyframes showAlert {
     from {
@@ -183,10 +187,15 @@ $size-lg: 26px;
   }
 
   animation-name: showAlert;
-  animation-duration: 0.5s;
-  animation-fill-mode: backwards;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
 
   &.alert_none {
+    // visibility: hidden;
+    // opacity: 0;
+    // height: 0;
+    // margin: 0;
+    // padding: 0;
     display: none;
   }
 }
