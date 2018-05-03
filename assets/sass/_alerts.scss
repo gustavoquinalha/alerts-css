@@ -146,7 +146,7 @@ $size-lg: 26px;
 
 // alerts absoluts
 .fixed-alerts {
-  padding: 10px;
+  // padding: 10px;
   box-sizing: border-box;
   position: fixed;
   z-index: 9999999;
@@ -154,19 +154,19 @@ $size-lg: 26px;
   max-width: 400px;
 
   &_bottom {
-    bottom: 0;
+    bottom: 10px;
   }
 
   &_top {
-    top: 0;
+    top: 10px;
   }
 
   &_right {
-    right: 0;
+    right: 10px;
   }
 
   &_left {
-    left: 0;
+    left: 10px;
   }
 
   .alert {
