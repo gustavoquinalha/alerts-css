@@ -73,7 +73,7 @@
   <body>
 
     <div class="fixed-alerts fixed-alerts_bottom fixed-alerts_right">
-      <div class="alert alert_danger alert_none alert-fade" style="animation-delay: .1s" id="alert-bottom-right" data-fade-time="5">
+      <div class="alert alert_danger alert_none alert-fade" style="animation-delay: .1s" id="alert-bottom-right" data-fade-time="5" data-id="alert1">
         <div class="alert--icon">
           <i class="fas fa-times-circle"></i>
         </div>
@@ -87,7 +87,7 @@
     </div>
 
     <div class="fixed-alerts fixed-alerts_bottom fixed-alerts_left">
-      <div class="alert alert_warning alert_none alert-fade" style="animation-delay: .1s" id="alert-bottom-left" data-fade-time="5" data-alert-ref="alert1">
+      <div class="alert alert_warning alert_none alert-fade" style="animation-delay: .1s" id="alert-bottom-left" data-fade-time="5" data-alert-ref="alert1" data-id="alert2">
         <div class="alert--icon">
           <i class="fas fa-exclamation-circle"></i>
         </div>
@@ -101,7 +101,7 @@
     </div>
 
     <div class="fixed-alerts fixed-alerts_top fixed-alerts_right">
-      <div class="alert alert_success alert_none alert-fade" style="animation-delay: .1s" id="alert-top-right" data-fade-time="5">
+      <div class="alert alert_success alert_none alert-fade" style="animation-delay: .1s" id="alert-top-right" data-fade-time="5" data-id="alert3">
         <div class="alert--icon">
           <i class="fas fa-check-circle"></i>
         </div>
@@ -115,7 +115,7 @@
     </div>
 
     <div class="fixed-alerts fixed-alerts_top fixed-alerts_left">
-      <div class="alert alert_info alert_none alert-fade" style="animation-delay: .1s" id="alert-top-left" data-fade-time="5">
+      <div class="alert alert_info alert_none alert-fade" style="animation-delay: .1s" id="alert-top-left" data-fade-time="5" data-id="alert4">
         <div class="alert--icon">
           <i class="fas fa-check-circle"></i>
         </div>
@@ -481,19 +481,23 @@
       const alertTopLeft = document.getElementById('alert-top-left');
 
       btnBottomRight.addEventListener('click', function start() {
-        alertBottomRight.classList.toggle('alert_none');
+        if (alertBottomRight.classList.contains('alert_none'))
+          alertBottomRight.classList.toggle('alert_none');
       });
 
       btnBottomLeft.addEventListener('click', function start() {
-        alertBottomLeft.classList.toggle('alert_none');
+        if (alertBottomLeft.classList.contains('alert_none'))
+          alertBottomLeft.classList.toggle('alert_none');
       });
 
       btnTopRight.addEventListener('click', function start() {
-        alertTopRight.classList.toggle('alert_none');
+        if (alertTopRight.classList.contains('alert_none'))
+          alertTopRight.classList.toggle('alert_none');
       });
 
       btnTopLeft.addEventListener('click', function start() {
-        alertTopLeft.classList.toggle('alert_none');
+        if (alertTopLeft.classList.contains('alert_none'))
+          alertTopLeft.classList.toggle('alert_none');
       });
     </script>
   </body>

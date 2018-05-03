@@ -3,6 +3,8 @@ const alertsFade = document.querySelectorAll('.alert-fade')
 
 const options = { attributes: true }
 
+let count = 0
+
 function getAlert(el) {
   if (el.classList.contains('alert')) return el
   else return getAlert(el.parentNode)
@@ -29,8 +31,10 @@ const onClassChange = new Event(`classChange`)
 
 function createNewObserver() {
   const observer = new MutationObserver(mutationList => {
-    mutationList[0].target.dispatchEvent(onClassChange)
+    const alert = mutationList[0].target
     observer.disconnect()
+    if (!alert.classList.contains('alert_none'))
+      alert.dispatchEvent(onClassChange)
   })
   return observer
 }
@@ -41,11 +45,13 @@ alertsFade.forEach(el => {
 })
 
 alertsFade.forEach(el => el.addEventListener('classChange', ev => {
-  const time = parseInt(ev.target.getAttribute('data-fade-time')) * 1000
-  console.log('Class Changed!', ev)
-  setTimeout(() => {
-    ev.target.classList.toggle('alert_none')
-    const mutation = createNewObserver()
-    mutation.observe(ev.target, options)
-  }, time)
+  const alert = ev.target
+  if (!alert.classList.contains('alert_none')) {
+    const time = parseInt(alert.getAttribute('data-fade-time')) * 1000
+    setTimeout(() => {
+      alert.classList.toggle('alert_none')
+      const mutation = createNewObserver()
+      mutation.observe(alert, options)
+    }, time)
+  }
 }))
