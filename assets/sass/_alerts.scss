@@ -169,7 +169,7 @@ $size-lg: 26px;
 
 // hide 
 .alert {
-  transition: all .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -186,16 +186,27 @@ $size-lg: 26px;
     }
   }
 
+  // @keyframes hideAlert {
+  //   from {}
+  // 
+  //   to {
+  //     transform: translateY(20px);
+  //     visibility: hidden;
+  //     height: 0;
+  //     margin: 0;
+  //     padding: 0;
+  //     opacity: 0;
+  //   }
+  // }
+
   animation-name: showAlert;
   animation-duration: 0.3s;
   animation-fill-mode: both;
 
   &.alert_none {
-    // visibility: hidden;
-    // opacity: 0;
-    // height: 0;
-    // margin: 0;
-    // padding: 0;
+    // animation-name: hideAlert;
+    // animation-duration: 0.3s;
+    // animation-fill-mode: both;
     display: none;
   }
 }
