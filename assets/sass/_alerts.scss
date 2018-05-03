@@ -216,8 +216,8 @@ $size-lg: 26px;
   box-sizing: border-box;
   position: fixed;
   z-index: 9999999;
-  width: 100%;
-  max-width: 400px;
+  width: calc(100% - 20px);
+  max-width: calc(400px - 20px);
 
   &_bottom {
     bottom: 10px;
