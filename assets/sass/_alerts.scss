@@ -18,6 +18,7 @@ $size-md: 16px;
 $size-lg: 26px;
 
 .container-alert {
+  box-sizing: border-box;
   .alert {
     margin-bottom: 10px;
 

@@ -95,6 +95,14 @@ a:hover {
   flex-basis: 150px;
 }
 
+.footer a {
+  color: var(--color-primary);
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
 .example {
   position: relative;
   width: 100%;
@@ -206,4 +214,8 @@ header .content .btn {
 
 ul li {
   margin-top: 10px;
+}
+
+.alert_info a:hover {
+  color: #3eb6ff
 }
