@@ -148,7 +148,7 @@
         <div class="sidebar" id="main-header">
           <nav>
             <ul>
-              <li><a data-scroll href="#example">Example</a></li>
+              <li><a data-scroll href="#examples">Examples</a></li>
               <li><a data-scroll href="#install">Install</a></li>
               <li><a data-scroll href="#sizes">Sizes</a></li>
               <li><a data-scroll href="#colors">Colors</a></li>
@@ -160,6 +160,20 @@
       </div>
 
       <div class="flex-basis-600 flex-grow-2 content hidden" id="content">
+
+        <div class="content" id="examples">
+          <div class="box-title">
+            <h2>Examples</h2>
+          </div>
+          <div class="">
+
+            <ul>
+              <li><a href="https://codepen.io/gustavoquinalha/pen/Jvyozo" target="_blank">Codepen: Normal alerts</a></li>
+              <li><a href="https://codepen.io/gustavoquinalha/pen/Jvyogd" target="_blank">Codepen: Fixed alerts</a></li>
+            </ul>
+
+          </div>
+        </div>
 
         <div class="content" id="install">
           <div class="box-title">
@@ -194,7 +208,26 @@
           <div class="box-title">
             <h2>Sizes</h2>
           </div>
+          <div class="margin-bottom-10">
+            <ul>
+              <li>Defina um tamanho para a classe ".container-alert".</li>
+              <li>Por default é 100%.</li>
+              <li><strong>Ex:</strong>
 
+                <div class="example">
+                  <pre><code class="css" id="css">.container-alert {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box
+}</code></pre>
+                  <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#css"><i class="far fa-copy"></i></button>
+                </div>
+              </li>
+            </ul>
+
+          </div>
           <button onclick="show(this)" class="btn btn-sm btn-margin btn-link"><i class="fas fa-retweet"></i></button>
           <div class="container-alert">
 
@@ -959,7 +992,7 @@ btnBottomRight.addEventListener('click', function toggleAlert() {
         <div class="size container wrap">
 
           <ul class="container wrap">
-            <li><a data-scroll href="#example">Example</a></li>
+            <li><a data-scroll href="#examples">Example</a></li>
             <li><a data-scroll href="#install">Install</a></li>
             <li><a data-scroll href="#sizes">Sizes</a></li>
             <li><a data-scroll href="#colors">Colors</a></li>
