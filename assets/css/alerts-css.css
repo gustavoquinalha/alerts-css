@@ -1,3 +1,7 @@
+.container-alert {
+  box-sizing: border-box
+}
+
 .container-alert .alert {
   margin-bottom: 10px
 }
@@ -53,7 +57,7 @@
 .alert .alert--close {
   margin-left: 10px;
   opacity: .7;
-  transition: .3s;
+  transition: .5s;
   cursor: pointer
 }
 
@@ -148,17 +152,6 @@
   background: #1a1a1a
 }
 
-.alert {
-  transition: .3s ease-in-out;
-  visibility: visible;
-  opacity: 1;
-  height: auto;
-  overflow: hidden;
-  animation-name: showAlert;
-  animation-duration: .3s;
-  animation-fill-mode: both
-}
-
 @keyframes showAlert {
   from {
     opacity: 0;
@@ -169,6 +162,17 @@
   }
 }
 
+.alert {
+  transition: .5s ease-in-out;
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  overflow: hidden;
+  animation-name: showAlert;
+  animation-duration: .5s;
+  animation-fill-mode: both
+}
+
 .alert.alert_none {
   display: none
 }
@@ -177,8 +181,8 @@
   box-sizing: border-box;
   position: fixed;
   z-index: 9999999;
-  width: 100%;
-  max-width: 400px
+  width: calc(100% - 20px);
+  max-width: calc(400px - 20px)
 }
 
 .fixed-alerts_bottom {
