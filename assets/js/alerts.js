@@ -20,13 +20,6 @@ alerts.forEach(el => el.addEventListener('click', () => {
   father.classList.toggle('alert_none')
 }))
 
-function show (btn) {
-  const alerts = btn.nextElementSibling.children
-  for (const el of alerts) {
-    if (!checkShowing(el)) el.classList.remove(`alert_none`)
-  }
-}
-
 const onClassChange = new Event(`classChange`)
 
 function createNewObserver() {
