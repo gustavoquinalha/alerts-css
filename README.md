@@ -21,4 +21,5 @@ $ yarn add @gustavoquinalha/alerts-css
 or
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alerts-css@1.0.1/assets/css/alerts.min.css">
+<script src="https://cdn.jsdelivr.net/npm/alerts-css@1.0.1/assets/js/alerts.min.js"></script>
 ```

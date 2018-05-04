@@ -65,7 +65,7 @@ $size-lg: 26px;
   .alert--close {
     margin-left: 10px;
     opacity: 0.7;
-    transition: 0.3s;
+    transition: 0.5s;
     cursor: pointer;
 
     &:hover {
@@ -169,7 +169,7 @@ $size-lg: 26px;
 
 // hide 
 .alert {
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
   visibility: visible;
   opacity: 1;
   height: auto;
@@ -200,7 +200,7 @@ $size-lg: 26px;
   // }
 
   animation-name: showAlert;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
   animation-fill-mode: both;
 
   &.alert_none {

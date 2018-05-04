@@ -73,7 +73,7 @@
   <body>
 
     <div class="fixed-alerts fixed-alerts_bottom fixed-alerts_right">
-      <div class="alert alert_danger alert_none alert-fade" style="animation-delay: .1s" id="alert-bottom-right" data-fade-time="3">
+      <div class="alert alert_danger alert_none alert-fade" id="alert-bottom-right" data-fade-time="3">
         <div class="alert--icon">
           <i class="fas fa-times-circle"></i>
         </div>
@@ -87,7 +87,7 @@
     </div>
 
     <div class="fixed-alerts fixed-alerts_bottom fixed-alerts_left">
-      <div class="alert alert_warning alert_none alert-fade" style="animation-delay: .1s" id="alert-bottom-left" data-fade-time="5" data-alert-ref="alert1" data-id="alert2">
+      <div class="alert alert_warning alert_none alert-fade" id="alert-bottom-left" data-fade-time="3">
         <div class="alert--icon">
           <i class="fas fa-exclamation-circle"></i>
         </div>
@@ -101,7 +101,7 @@
     </div>
 
     <div class="fixed-alerts fixed-alerts_top fixed-alerts_right">
-      <div class="alert alert_success alert_none alert-fade" style="animation-delay: .1s" id="alert-top-right" data-fade-time="5" data-id="alert3">
+      <div class="alert alert_success alert_none alert-fade" id="alert-top-right" data-fade-time="3">
         <div class="alert--icon">
           <i class="fas fa-check-circle"></i>
         </div>
@@ -115,7 +115,7 @@
     </div>
 
     <div class="fixed-alerts fixed-alerts_top fixed-alerts_left">
-      <div class="alert alert_info alert_none alert-fade" style="animation-delay: .1s" id="alert-top-left" data-fade-time="5" data-id="alert4">
+      <div class="alert alert_info alert_none alert-fade" id="alert-top-left" data-fade-time="3">
         <div class="alert--icon">
           <i class="fas fa-check-circle"></i>
         </div>
@@ -171,19 +171,21 @@
               <pre><code class="shell" id="npm">$ npm i alerts-css -D</code></pre>
               <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#npm"><i class="far fa-copy"></i></button>
             </div>
+
             <p class="type">Yarn</p>
             <div class="example margin-bottom-20">
               <pre><code class="shell" id="yarn">$ yarn add alerts-css</code></pre>
               <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#yarn"><i class="far fa-copy"></i></button>
             </div>
+
             <p class="type">jsdelivr</p>
             <div class="example">
               <pre><code class="html" id="jsdelivr">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/alerts-css@1.0.1/assets/css/alerts-css.min.css&quot;&gt;</code></pre>
               <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#jsdelivr"><i class="far fa-copy"></i></button>
             </div>
             <div class="example">
-              <pre><code class="html" id="jsdelivr">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/alerts-css@1.0.1/assets/js/alerts.min.js&quot;&gt;</code></pre>
-              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#jsdelivr"><i class="far fa-copy"></i></button>
+              <pre><code class="html" id="jsdelivrjs">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/alerts-css@1.0.1/assets/js/alerts.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#jsdelivrjs"><i class="far fa-copy"></i></button>
             </div>
           </div>
         </div>
@@ -207,6 +209,7 @@
                 <i class="far fa-times-circle"></i>
               </div>
             </div>
+
             <div class="alert" style="animation-delay: .2s">
               <div class="alert--icon">
                 <i class="fas fa-bell"></i>
@@ -218,6 +221,7 @@
                 <i class="far fa-times-circle"></i>
               </div>
             </div>
+
             <div class="alert alert_lg" style="animation-delay: .3s">
               <div class="alert--icon">
                 <i class="fas fa-bell"></i>
@@ -230,200 +234,718 @@
               </div>
             </div>
           </div>
+          <div class="example margin-top-10">
+            <pre><code class="html" id="alertSizes">&lt;div class=&quot;container-alert&quot;&gt;
+  
+  &lt;div class=&quot;alert alert_sm&quot; style=&quot;animation-delay: .1s&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-bell&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Usu&aacute;rio ou senha incorretos!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;alert&quot; style=&quot;animation-delay: .2s&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-bell&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Usu&aacute;rio ou senha incorretos!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;alert alert_lg&quot; style=&quot;animation-delay: .3s&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-bell&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Usu&aacute;rio ou senha incorretos!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+            <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alertSizes"><i class="far fa-copy"></i></button>
+          </div>
         </div>
 
         <div class="content" id="colors">
           <div class="box-title">
             <h2>Colors</h2>
           </div>
-          <button onclick="show(this)" class="btn btn-sm btn-margin btn-link"><i class="fas fa-retweet"></i></button>
-          <div class="container-alert">
-            <div class="alert" style="animation-delay: .1s">
-              <div class="alert--icon">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div class="alert--content">
-                Logado com sucesso!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-            <div class="alert alert_success" style="animation-delay: .2s">
-              <div class="alert--icon">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div class="alert--content">
-                Logado com sucesso!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
+
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert">
+                  <div class="alert--icon">
+                    <i class="fas fa-spinner fa-spin"></i>
+                  </div>
+                  <div class="alert--content">
+                    Carregando...
+                  </div>
+                  <div class="alert--close">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="alert alert_info" style="animation-delay: .3s">
-              <div class="alert--icon">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div class="alert--content">
-                Atualizado com sucesso!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-            <div class="alert alert_danger" style="animation-delay: .4s">
-              <div class="alert--icon">
-                <i class="fas fa-times-circle"></i>
-              </div>
-              <div class="alert--content">
-                Usuário ou senha incorretos!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-            <div class="alert alert_warning" style="animation-delay: .5s">
-              <div class="alert--icon">
-                <i class="fas fa-exclamation-circle"></i>
-              </div>
-              <div class="alert--content">
-                Desculpe, ocorreu algum erro!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-            <div class="alert alert_dark" style="animation-delay: .6s">
-              <div class="alert--icon">
-                <i class="fas fa-exclamation-circle"></i>
-              </div>
-              <div class="alert--content">
-                Desculpe, ocorreu algum erro!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
+
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-color-default">&lt;div class=&quot;container-alert&quot;&gt;
+                  
+  &lt;div class=&quot;alert&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-spinner fa-spin&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+    Carregando...
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-color-default"><i class="far fa-copy"></i></button>
             </div>
           </div>
+
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert alert_success">
+                  <div class="alert--icon">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="alert--content">
+                    Logado com sucesso!
+                  </div>
+                  <div class="alert--close">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-color-success">&lt;div class=&quot;container-alert&quot;&gt;
+                
+  &lt;div class=&quot;alert alert_success&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Logado com sucesso!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-color-success"><i class="far fa-copy"></i></button>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert alert_info">
+                  <div class="alert--icon">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="alert--content">
+                    Atualizado com sucesso!
+                  </div>
+                  <div class="alert--close">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-color-info">&lt;div class=&quot;container-alert&quot;&gt;
+                
+  &lt;div class=&quot;alert alert_info&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Atualizado com sucesso!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-color-info"><i class="far fa-copy"></i></button>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert alert_danger">
+                  <div class="alert--icon">
+                    <i class="fas fa-times-circle"></i>
+                  </div>
+                  <div class="alert--content">
+                    Usuário ou senha incorretos!
+                  </div>
+                  <div class="alert--close">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-color-danger">&lt;div class=&quot;container-alert&quot;&gt;
+                
+  &lt;div class=&quot;alert alert_danger&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Usu&aacute;rio ou senha incorretos!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-color-danger"><i class="far fa-copy"></i></button>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert alert_warning">
+                  <div class="alert--icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                  </div>
+                  <div class="alert--content">
+                    Desculpe, ocorreu algum erro!
+                  </div>
+                  <div class="alert--close">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-color-warning">&lt;div class=&quot;container-alert&quot;&gt;
+                
+  &lt;div class=&quot;alert alert_warning&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-exclamation-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Desculpe, ocorreu algum erro!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-color-warning"><i class="far fa-copy"></i></button>
+            </div>
+          </div>
+
+
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert alert_dark">
+                  <div class="alert--icon">
+                    <i class="fas fa-exclamation-circle"></i>
+                  </div>
+                  <div class="alert--content">
+                    Desculpe, ocorreu algum erro!
+                  </div>
+                  <div class="alert--close">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-color-dark">&lt;div class=&quot;container-alert&quot;&gt;
+                
+  &lt;div class=&quot;alert alert_dark&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-exclamation-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Desculpe, ocorreu algum erro!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-color-dark"><i class="far fa-copy"></i></button>
+            </div>
+          </div>
+
         </div>
+
 
         <div class="content" id="icons">
           <div class="box-title">
             <h2>Icons</h2>
           </div>
-          <button onclick="show(this)" class="btn btn-sm btn-margin btn-link"><i class="fas fa-retweet"></i></button>
-          <div class="container-alert">
 
-            <div class="alert" style="animation-delay: .1s">
-              <div class="alert--content">
-                Lorem ipsum dolor sit amet!
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-
-            <div class="alert alert_info" style="animation-delay: .2s">
-              <div class="alert--content">
-                <strong>Lorem ipsum dolor sit amet!</strong>
-                <div class="alert--paragraph">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert">
+                  <div class="alert--content">
+                    Lorem ipsum dolor sit amet!
+                  </div>
+                  <div class="alert--close">
+                    <i class="far fa-times-circle"></i>
+                  </div>
                 </div>
               </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
             </div>
-
-            <div class="alert alert_info" style="animation-delay: .3s">
-              <div class="alert--icon alert--icon_lg">
-                <i class="fas fa-check-circle"></i>
-              </div>
-              <div class="alert--content">
-                <strong>Lorem ipsum dolor sit amet!</strong>
-                <div class="alert--paragraph">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-              </div>
-              <div class="alert--close">
-                <i class="far fa-times-circle"></i>
-              </div>
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-icon-1">&lt;div class=&quot;container-alert&quot;&gt;
+  &lt;div class=&quot;alert&quot;&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Lorem ipsum dolor sit amet!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-icon-1"><i class="far fa-copy"></i></button>
             </div>
-
           </div>
+
+
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert alert_info">
+                  <div class="alert--content">
+                    <strong>Lorem ipsum dolor sit amet!</strong>
+                    <div class="alert--paragraph">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                  <div class="alert--close">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-icon-2">&lt;div class=&quot;container-alert&quot;&gt;
+                
+  &lt;div class=&quot;alert alert_info&quot;&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      &lt;strong&gt;Lorem ipsum dolor sit amet!&lt;/strong&gt;
+      &lt;div class=&quot;alert--paragraph&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-icon-2"><i class="far fa-copy"></i></button>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert alert_success">
+                  <div class="alert--icon alert--icon_lg">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="alert--content">
+                    <strong>Lorem ipsum dolor sit amet!</strong>
+                    <div class="alert--paragraph">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                  <div class="alert--close">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-icon-3">&lt;div class=&quot;container-alert&quot;&gt;
+                
+  &lt;div class=&quot;alert alert_success&quot;&gt;
+    &lt;div class=&quot;alert--icon alert--icon_lg&quot;&gt;
+      &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      &lt;strong&gt;Lorem ipsum dolor sit amet!&lt;/strong&gt;
+      &lt;div class=&quot;alert--paragraph&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-icon-3"><i class="far fa-copy"></i></button>
+            </div>
+          </div>
+
         </div>
 
         <div class="content" id="usage">
           <div class="box-title">
             <h2>Usage</h2>
           </div>
-          <button onclick="show(this)" class="btn btn-sm btn-margin btn-link"><i class="fas fa-retweet"></i></button>
-          <div class="container-alert">
 
-            <div class="alert alert_info" style="animation-delay: .1s">
-              <div class="alert--content">
-                <h3>Lorem ipsum dolor sit amet!</h3>
-                </br>
-                <div class="alert--paragraph">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quisquam adipisci dolor molestiae hic harum eos consectetur, beatae, minus, cumque, reiciendis voluptatem. Ducimus, quos. Reprehenderit minima incidunt ex dolore, totam.</p>
-                  <hr class="hr">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert alert_info">
+                  <div class="alert--content">
+                    <h3>Lorem ipsum dolor sit amet!</h3>
+                    </br>
+                    <div class="alert--paragraph">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quisquam adipisci dolor molestiae hic harum eos consectetur, beatae, minus, cumque, reiciendis voluptatem. Ducimus, quos. Reprehenderit minima incidunt ex dolore, totam.</p>
+                      <hr class="hr">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                  </div>
+                  <div class="alert--close alert--close_absolute">
+                    <i class="far fa-times-circle"></i>
+                  </div>
                 </div>
-              </div>
-              <div class="alert--close alert--close_absolute">
-                <i class="far fa-times-circle"></i>
               </div>
             </div>
 
-            <div class="alert alert_success" style="animation-delay: .2s">
-              <div class="alert--content">
-                <h3>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet!</h3>
-                <div class="alert--paragraph">
-                  <hr class="hr">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur impedit, ipsum minus libero minima fugiat obcaecati vero, exercitationem possimus facere. Iusto quos itaque nihil eos enim unde atque delectus, assumenda.</p>
-                </div>
-                <div class="alert--buttons">
-                  <button type="button" name="button" class="btn btn-success">Accept</button>
-                  <button type="button" name="button" class="btn">Decline</button>
-                </div>
-              </div>
-              <div class="alert--close alert--close_absolute">
-                <i class="far fa-times-circle"></i>
-              </div>
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-usage-1">&lt;div class=&quot;container-alert&quot;&gt;
+                
+  &lt;div class=&quot;alert alert_info&quot;&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      &lt;h3&gt;Lorem ipsum dolor sit amet!&lt;/h3&gt;
+      &lt;/br&gt;
+      &lt;div class=&quot;alert--paragraph&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quisquam adipisci dolor molestiae hic harum eos consectetur, beatae, minus, cumque, reiciendis voluptatem. Ducimus, quos. Reprehenderit minima incidunt ex dolore, totam.&lt;/p&gt;
+        &lt;hr class=&quot;hr&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close alert--close_absolute&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-usage-1"><i class="far fa-copy"></i></button>
             </div>
-
-            <div class="alert alert_danger" style="animation-delay: .3s">
-              <div class="alert--content">
-                <h3>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet!</h3>
-                <div class="alert--paragraph">
-                  <hr class="hr">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur impedit, ipsum minus libero minima fugiat obcaecati vero, exercitationem possimus facere. Iusto quos itaque nihil eos enim unde atque delectus, assumenda.</p>
-                </div>
-                <div class="alert--buttons">
-                  <button type="button" name="button" class="btn btn-danger">Back</button>
-                  <button type="button" name="button" class="btn">Decline</button>
-                </div>
-              </div>
-              <div class="alert--close alert--close_absolute">
-                <i class="far fa-times-circle"></i>
-              </div>
-            </div>
-
           </div>
+
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert alert_success">
+                  <div class="alert--content">
+                    <h3>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet!</h3>
+                    <div class="alert--paragraph">
+                      <hr class="hr">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur impedit, ipsum minus libero minima fugiat obcaecati vero, exercitationem possimus facere. Iusto quos itaque nihil eos enim unde atque delectus, assumenda.</p>
+                    </div>
+                    <div class="alert--buttons">
+                      <button type="button" name="button" class="btn btn-success">Accept</button>
+                      <button type="button" name="button" class="btn">Decline</button>
+                    </div>
+                  </div>
+                  <div class="alert--close alert--close_absolute">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-usage-2">&lt;div class=&quot;container-alert&quot;&gt;
+                
+  &lt;div class=&quot;alert alert_success&quot;&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      &lt;h3&gt;Lorem ipsum dolor sit amet lorem ipsum dolor sit amet!&lt;/h3&gt;
+      &lt;div class=&quot;alert--paragraph&quot;&gt;
+        &lt;hr class=&quot;hr&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur impedit, ipsum minus libero minima fugiat obcaecati vero, exercitationem possimus facere. Iusto quos itaque nihil eos enim unde atque delectus, assumenda.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;alert--buttons&quot;&gt;
+        &lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Accept&lt;/button&gt;
+        &lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;btn&quot;&gt;Decline&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close alert--close_absolute&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-usage-2"><i class="far fa-copy"></i></button>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="container">
+              <button onclick="show(this)" class="btn btn-sm btn-link"><i class="fas fa-retweet"></i></button>
+              <div class="container-alert margin-left-10 full-width">
+                <div class="alert alert_danger">
+                  <div class="alert--content">
+                    <h3>Lorem ipsum dolor sit amet lorem ipsum dolor sit amet!</h3>
+                    <div class="alert--paragraph">
+                      <hr class="hr">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur impedit, ipsum minus libero minima fugiat obcaecati vero, exercitationem possimus facere. Iusto quos itaque nihil eos enim unde atque delectus, assumenda.</p>
+                    </div>
+                    <div class="alert--buttons">
+                      <button type="button" name="button" class="btn btn-danger">Back</button>
+                      <button type="button" name="button" class="btn">Decline</button>
+                    </div>
+                  </div>
+                  <div class="alert--close alert--close_absolute">
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="example margin-top-10 margin-bottom-20">
+              <pre><code class="html" id="alert-usage-3">&lt;div class=&quot;container-alert&quot;&gt;
+                
+  &lt;div class=&quot;alert alert_danger&quot;&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      &lt;h3&gt;Lorem ipsum dolor sit amet lorem ipsum dolor sit amet!&lt;/h3&gt;
+      &lt;div class=&quot;alert--paragraph&quot;&gt;
+        &lt;hr class=&quot;hr&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur impedit, ipsum minus libero minima fugiat obcaecati vero, exercitationem possimus facere. Iusto quos itaque nihil eos enim unde atque delectus, assumenda.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;alert--buttons&quot;&gt;
+        &lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Back&lt;/button&gt;
+        &lt;button type=&quot;button&quot; name=&quot;button&quot; class=&quot;btn&quot;&gt;Decline&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close alert--close_absolute&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#alert-usage-3"><i class="far fa-copy"></i></button>
+            </div>
+          </div>
+
         </div>
 
         <div class="content" id="fixed-alerts">
           <div class="box-title">
             <h2>Fixed alerts</h2>
+            <div class="example">
+              <ul class="margin-top-10 margin-bottom-10">
+                <li>Primeiramente você precisa usar nosso arquivo <i>alerts.js</i>.</li>
+              </ul>
+            </div>
+            <div class="example">
+              <pre><code class="html" id="jsdelivrjs2">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/alerts-css@1.0.1/assets/js/alerts.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+              <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#jsdelivrjs2"><i class="far fa-copy"></i></button>
+            </div>
+            <div class="example">
+              <ul class="margin-top-10 margin-bottom-10">
+                <li>Você precisa adicionar o parametro <i>"data-fade-time"</i> com o valor em <i>sugundos</i>.</li>
+                <li><strong>Type:</strong> <i>Number</i></li>
+                <li> <strong>Ex:</strong> <i>data-fade-time="3"</i></li>
+              </ul>
+            </div>
           </div>
-          <!-- <button onclick="show(this)" class="btn btn-sm btn-margin btn-link"><i class="fas fa-retweet"></i></button> -->
-          <div class="container-alert container wrap">
 
-            <button type="button" name="button" class="btn btn-primary" id="top-left" data-alert-btn-ref="alert1">Top Left</button>
-            <button type="button" name="button" class="btn btn-primary" id="top-right">Top Right</button>
-            <button type="button" name="button" class="btn btn-primary" id="bottom-left">Bottom Left</button>
-            <button type="button" name="button" class="btn btn-primary" id="bottom-right">Bottom Right</button>
+          <div class="">
+            <div class="container-alert container wrap">
+              <button type="button" name="button" class="btn btn-primary" id="top-left" data-alert-btn-ref="alert1">Top Left</button>
+              <div class="example margin-top-10">
+                <pre><code class="html" id="fixed-alerts-btn-1">&lt;button type=&quot;button&quot; name=&quot;button&quot; id=&quot;top-left&quot;&gt;Top Left&lt;/button&gt;</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-btn-1"><i class="far fa-copy"></i></button>
+              </div>
+              <div class="example margin-top-10">
+                <pre><code class="html" id="fixed-alerts-html-1">&lt;div class=&quot;fixed-alerts fixed-alerts_top fixed-alerts_left&quot;&gt;
+                  
+  &lt;div class=&quot;alert alert_info alert_none alert-fade&quot; id=&quot;alert-top-left&quot; data-fade-time=&quot;3&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Atualizado com sucesso!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-html-1"><i class="far fa-copy"></i></button>
+              </div>
+              <div class="example margin-top-10 margin-bottom-20">
+                <pre><code class="js" id="fixed-alerts-js-1">const btnTopLeft = document.getElementById('top-left')
+const alertTopLeft = document.getElementById('alert-top-left');
 
+btnTopLeft.addEventListener('click', function toggleAlert() {
+  alertTopLeft.classList.toggle('alert_none')
+})</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-js-1"><i class="far fa-copy"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="container-alert container wrap">
+              <button type="button" name="button" class="btn btn-primary" id="top-right">Top Right</button>
+              <div class="example margin-top-10">
+                <pre><code class="html" id="fixed-alerts-btn-2">&lt;button type=&quot;button&quot; name=&quot;button&quot; id=&quot;top-right&quot;&gt;Top Right&lt;/button&gt;</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-btn-2"><i class="far fa-copy"></i></button>
+              </div>
+              <div class="example margin-top-10">
+                <pre><code class="html" id="fixed-alerts-html-2">&lt;div class=&quot;fixed-alerts fixed-alerts_top fixed-alerts_right&quot;&gt;
+                  
+  &lt;div class=&quot;alert alert_success alert_none alert-fade&quot; id=&quot;alert-top-right&quot; data-fade-time=&quot;3&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-check-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Logado com sucesso!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-html-2"><i class="far fa-copy"></i></button>
+              </div>
+              <div class="example margin-top-10 margin-bottom-20">
+                <pre><code class="js" id="fixed-alerts-js-2">const btnTopRight = document.getElementById('top-right')
+const alertTopRight = document.getElementById('alert-top-right');
+
+btnTopRight.addEventListener('click', function toggleAlert() {
+  alertTopRight.classList.toggle('alert_none')
+})</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-js-2"><i class="far fa-copy"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="container-alert container wrap">
+              <button type="button" name="button" class="btn btn-primary" id="bottom-left">Bottom Left</button>
+
+              <div class="example margin-top-10">
+                <pre><code class="html" id="fixed-alerts-btn-3">&lt;button type=&quot;button&quot; name=&quot;button&quot; id=&quot;bottom-left&quot;&gt;Bottom Left&lt;/button&gt;</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-btn-3"><i class="far fa-copy"></i></button>
+              </div>
+              <div class="example margin-top-10">
+                <pre><code class="html" id="fixed-alerts-html-3">&lt;div class=&quot;fixed-alerts fixed-alerts_bottom fixed-alerts_left&quot;&gt;
+                  
+  &lt;div class=&quot;alert alert_warning alert_none alert-fade&quot; id=&quot;alert-bottom-left&quot; data-fade-time=&quot;3&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-exclamation-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Desculpe, ocorreu algum erro!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-html-3"><i class="far fa-copy"></i></button>
+              </div>
+              <div class="example margin-top-10 margin-bottom-20">
+                <pre><code class="js" id="fixed-alerts-js-3">const btnBottomLeft = document.getElementById('bottom-Left')
+const alertBottomLeft = document.getElementById('alert-bottom-Left');
+
+btnBottomLeft.addEventListener('click', function toggleAlert() {
+  alertBottomLeft.classList.toggle('alert_none')
+})</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-js-3"><i class="far fa-copy"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="container-alert container wrap">
+              <button type="button" name="button" class="btn btn-primary" id="bottom-right">Bottom Right</button>
+              <div class="example margin-top-10">
+                <pre><code class="html" id="fixed-alerts-btn-4">&lt;button type=&quot;button&quot; name=&quot;button&quot; id=&quot;bottom-right&quot;&gt;Bottom Right&lt;/button&gt;</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-btn-4"><i class="far fa-copy"></i></button>
+              </div>
+              <div class="example margin-top-10">
+                <pre><code class="html" id="fixed-alerts-html-4">&lt;div class=&quot;fixed-alerts fixed-alerts_bottom fixed-alerts_right&quot;&gt;
+                  
+  &lt;div class=&quot;alert alert_danger alert_none alert-fade&quot; id=&quot;alert-bottom-right&quot; data-fade-time=&quot;3&quot;&gt;
+    &lt;div class=&quot;alert--icon&quot;&gt;
+      &lt;i class=&quot;fas fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--content&quot;&gt;
+      Usu&aacute;rio ou senha incorretos!
+    &lt;/div&gt;
+    &lt;div class=&quot;alert--close&quot;&gt;
+      &lt;i class=&quot;far fa-times-circle&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  
+&lt;/div&gt;</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-html-4"><i class="far fa-copy"></i></button>
+              </div>
+              <div class="example margin-top-10 margin-bottom-20">
+                <pre><code class="js" id="fixed-alerts-js-4">const btnBottomRight = document.getElementById('bottom-right')
+const alertBottomRight = document.getElementById('alert-bottom-right');
+
+btnBottomRight.addEventListener('click', function toggleAlert() {
+  alertBottomRight.classList.toggle('alert_none')
+})</code></pre>
+                <button type="button" name="button" class="btn btn-link btn-example" data-clipboard-target="#fixed-alerts-js-4"><i class="far fa-copy"></i></button>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -503,6 +1025,14 @@
         if (alertTopLeft.classList.contains('alert_none'))
           alertTopLeft.classList.toggle('alert_none');
       });
+    </script>
+    <script>
+      function show(btn) {
+        const alerts = btn.nextElementSibling.children
+        for (const el of alerts) {
+          if (!checkShowing(el)) el.classList.remove(`alert_none`)
+        }
+      }
     </script>
   </body>
 
